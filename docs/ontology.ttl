@@ -1,0 +1,468 @@
+@prefix : <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#> .
+
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11> rdf:type owl:Ontology .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasCorrectiveAction
+:hasCorrectiveAction rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Incident ;
+                     rdfs:range :CorrectiveAction ;
+                     rdfs:comment "Links an incident to the corrective action taken"@en ;
+                     rdfs:label "hasCorrectiveAction"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasIVDRiskClass
+:hasIVDRiskClass rdf:type owl:ObjectProperty ;
+                 rdfs:domain :IVDDevice ;
+                 rdfs:range :IDVRiskClass ;
+                 rdfs:comment "Links an IVD device to its risk classification under IVDR regulation"@en ;
+                 rdfs:label "hasIVDRiskClass"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasManufacturer
+:hasManufacturer rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Device ;
+                 rdfs:range :Manufacturer ;
+                 rdfs:comment "Links a device to the company that manufactured it"@en ;
+                 rdfs:label "hasManufacturer"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasRisk
+:hasRisk rdf:type owl:ObjectProperty ;
+         rdfs:domain :Incident ;
+         rdfs:range :Risk ;
+         rdfs:comment "Links an incident to the risk that caused it"@en ;
+         rdfs:label "hasRisk"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasRiskClass
+:hasRiskClass rdf:type owl:ObjectProperty ;
+              rdfs:domain :Device ;
+              rdfs:range :RiskClass ;
+              rdfs:comment "Links a device to its risk classification"@en ;
+              rdfs:label "hasRiskClass"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#reportedIn
+:reportedIn rdf:type owl:ObjectProperty ;
+            rdfs:domain :Incident ;
+            rdfs:range :Device ;
+            rdfs:comment "Links an incident to the device involved"@en ;
+            rdfs:label "reportedIn"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#actionType
+:actionType rdf:type owl:DatatypeProperty ;
+            rdfs:domain :CorrectiveAction ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Type of action that was taken to fix the problem"@en ;
+            rdfs:label "actionType"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#country
+:country rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Manufacturer ;
+         rdfs:range xsd:string ;
+         rdfs:comment "Country where the manufacturer is based"@en ;
+         rdfs:label "country"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#deviceName
+:deviceName rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Device ;
+            rdfs:range xsd:string ;
+            rdfs:label "The name given to the device by the manufacturer"@en ,
+                       "deviceName"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#isActive
+:isActive rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Device ;
+          rdfs:range xsd:boolean ;
+          rdfs:comment "Tells if the device needs energy to work"@en ;
+          rdfs:label "isActive"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#isImplantable
+:isImplantable rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Device ;
+               rdfs:range xsd:boolean ;
+               rdfs:comment "Says if the device is meant to be implanted in the body or not"@en ;
+               rdfs:label "isImplantable"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#manufacturerName
+:manufacturerName rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Manufacturer ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "Name of the company that makes the device"@en ;
+                  rdfs:label "manufacturerName"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#outcome
+:outcome rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Incident ;
+         rdfs:range xsd:string ;
+         rdfs:comment "What happened to the patient after the incident"@en ;
+         rdfs:label "outcome"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#reportDate
+:reportDate rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Incident ;
+            rdfs:range xsd:date ;
+            rdfs:comment "Date when the incident was reported to the authorities"@en ;
+            rdfs:label "reportDate"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#status
+:status rdf:type owl:DatatypeProperty ;
+        rdfs:domain :CorrectiveAction ;
+        rdfs:range xsd:string ;
+        rdfs:comment "Shows if the corrective action is still open or already closed"@en ;
+        rdfs:label "status"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#udiDI
+:udiDI rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Device ;
+       rdfs:range xsd:string ;
+       rdfs:comment "Unique identifier code of the device, used in EUDAMED"@en ;
+       rdfs:label "udiDI"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ActiveDevice
+:ActiveDevice rdf:type owl:Class ;
+              rdfs:subClassOf :Device ;
+              rdfs:comment "Device that needs electricity or another energy source to work"@en ;
+              rdfs:label "ActiveDevice"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassA
+:ClassA rdf:type owl:Class ;
+        rdfs:subClassOf :IDVRiskClass ;
+        rdfs:comment "IVD devices with low risk, used in general lab analysis"@en ;
+        rdfs:label "ClassA"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassB
+:ClassB rdf:type owl:Class ;
+        rdfs:subClassOf :IDVRiskClass ;
+        rdfs:comment "IVD devices with moderate risk, like pregnancy tests"@en ;
+        rdfs:label "ClassB"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassC
+:ClassC rdf:type owl:Class ;
+        rdfs:subClassOf :IDVRiskClass ;
+        rdfs:comment "IVD devices with high risk, like glucose meters for diabetics"@en ;
+        rdfs:label "ClassC"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassD
+:ClassD rdf:type owl:Class ;
+        rdfs:subClassOf :IDVRiskClass ;
+        rdfs:comment "IVD devices with very high risk, like HIV or hepatitis tests"@en ;
+        rdfs:label "ClassD"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassI
+:ClassI rdf:type owl:Class ;
+        rdfs:subClassOf :RiskClass ;
+        rdfs:comment "Devices with low risk, like bandages or glasses"@en ;
+        rdfs:label "ClassI"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassIII
+:ClassIII rdf:type owl:Class ;
+          rdfs:subClassOf :RiskClass ;
+          rdfs:comment "Devices with the highest risk, like pacemakers or heart valves"@en ;
+          rdfs:label "ClassIII"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassIIa
+:ClassIIa rdf:type owl:Class ;
+          rdfs:subClassOf :RiskClass ;
+          rdfs:comment "Devices with medium risk, like contact lenses"@en ;
+          rdfs:label "ClassIIa"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassIIb
+:ClassIIb rdf:type owl:Class ;
+          rdfs:subClassOf :RiskClass ;
+          rdfs:comment "Devices with higher risk, like ventilators"@en ;
+          rdfs:label "ClassIIb"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#CorrectiveAction
+:CorrectiveAction rdf:type owl:Class ;
+                  rdfs:comment "A field safety corrective action taken after an incident"@en ;
+                  rdfs:label "CorrectiveAction"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Device
+:Device rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasManufacturer ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Manufacturer
+                        ] ;
+        rdfs:comment "A medical device registered in the EUDAMED catalogue"@en ;
+        rdfs:label "Device"@en ;
+        rdfs:seeAlso "http://dbpedia.org/ontology/MedicalDevice"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#IDVRiskClass
+:IDVRiskClass rdf:type owl:Class ;
+              rdfs:comment "Risk category for in vitro diagnostic devices under IVDR regulation"@en ;
+              rdfs:label "IVDRiskClass"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#IVDDevice
+:IVDDevice rdf:type owl:Class ;
+           rdfs:subClassOf :Device ;
+           rdfs:comment "Device used to analyze samples outside the body for diagnosis"@en ;
+           rdfs:label "IVDDevice"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ImplantableActiveDevice
+:ImplantableActiveDevice rdf:type owl:Class ;
+                         rdfs:subClassOf :Device ;
+                         rdfs:comment "Device that is both implanted in the body and needs energy to work"@en ;
+                         rdfs:label "ImplantableActiveDevice"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ImplantableDevice
+:ImplantableDevice rdf:type owl:Class ;
+                   rdfs:subClassOf :Device ;
+                   rdfs:comment "Device that is placed inside the human body"@en ;
+                   rdfs:label "ImplantableDevice"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#InSituCorrection
+:InSituCorrection rdf:type owl:Class ;
+                  rdfs:subClassOf :CorrectiveAction ;
+                  rdfs:comment "Correction done directly on devices that are already being used"@en ;
+                  rdfs:label "InSituCorrection"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Incident
+:Incident rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :reportedIn ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Device
+                          ] ;
+          rdfs:comment "A serious incident reported for a specific medical device"@en ;
+          rdfs:label "Incident"@en ;
+          rdfs:seeAlso "http://dbpedia.org/ontology/Event"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Manufacturer
+:Manufacturer rdf:type owl:Class ;
+              rdfs:comment "A company which manufactures medical devices" ;
+              rdfs:label "Manufacturer"@en ;
+              rdfs:seeAlso "http://dbpedia.org/ontology/Company"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Recall
+:Recall rdf:type owl:Class ;
+        rdfs:subClassOf :CorrectiveAction ;
+        rdfs:comment "When a manufacturer takes back devices because they have a problem"@en ;
+        rdfs:label "Recall"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Risk
+:Risk rdf:type owl:Class ;
+      rdfs:comment "A risk identified and classified according to IMDRF nomenclature" ;
+      rdfs:label "Risk"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#RiskClass
+:RiskClass rdf:type owl:Class ;
+           rdfs:comment "Category of risk assigned to a device following the MDR regulation rules"@en ;
+           rdfs:label "RiskClass"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#SafetyAlert
+:SafetyAlert rdf:type owl:Class ;
+             rdfs:subClassOf :CorrectiveAction ;
+             rdfs:comment "Alert sent to hospitals and doctors about a safety problem with a device"@en ;
+             rdfs:label "SafetyAlert"@en .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#SeriousIncident
+:SeriousIncident rdf:type owl:Class ;
+                 rdfs:subClassOf :Incident ;
+                 rdfs:comment "An incident that caused serious harm"@en ;
+                 rdfs:label "SeriousIncident"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#DEV001
+:DEV001 rdf:type owl:NamedIndividual ,
+                 :Device ;
+        :hasManufacturer :MAN001 ;
+        :hasRiskClass <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-9#ClassIII> ;
+        :deviceName "HeartMate" ;
+        :isActive "true"^^xsd:boolean ;
+        :isImplantable "true"^^xsd:boolean ;
+        :udiDI "(01)00380740009095" .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#FSCA001
+:FSCA001 rdf:type owl:NamedIndividual ,
+                  :CorrectiveAction ;
+         :actionType "SafetyAlert" ;
+         :status "Open" .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#INC001
+:INC001 rdf:type owl:NamedIndividual ,
+                 :Incident ;
+        :hasCorrectiveAction :FSCA001 ;
+        :hasRisk :RSK001 ;
+        :reportedIn :DEV001 ;
+        :outcome "Serious patient injury - embolic stroke" ;
+        :reportDate "2024-01-15"^^xsd:date .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#MAN001
+:MAN001 rdf:type owl:NamedIndividual ,
+                 :Manufacturer ;
+        :country "Ireland" ;
+        :manufacturerName "Medtronic plc" .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#RSK001
+:RSK001 rdf:type owl:NamedIndividual ,
+                 :Risk .
+
+
+###  http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-9#ClassIII
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-9#ClassIII> rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#d> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#m> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#i> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#a> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Incident ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasCorrectiveAction ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#a>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :CorrectiveAction ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Incident ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :reportedIn ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#d>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRisk ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRisk ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Device ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasManufacturer ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#m>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Manufacturer ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#m>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

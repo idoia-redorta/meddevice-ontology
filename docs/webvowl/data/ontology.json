@@ -1,0 +1,935 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Manufacturer",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "en",
+        "value" : "http://dbpedia.org/ontology/Company",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Manufacturer",
+      "en" : "Manufacturer"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#MAN001",
+      "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+      "labels" : {
+        "IRI-based" : "MAN001"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A company which manufactures medical devices"
+    },
+    "id" : "0"
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#SeriousIncident",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeriousIncident",
+      "en" : "SeriousIncident"
+    },
+    "comment" : {
+      "en" : "An incident that caused serious harm"
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#RiskClass",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RiskClass",
+      "en" : "RiskClass"
+    },
+    "subClasses" : [ "9", "10", "11", "12" ],
+    "comment" : {
+      "en" : "Category of risk assigned to a device following the MDR regulation rules"
+    },
+    "id" : "8"
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#InSituCorrection",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InSituCorrection",
+      "en" : "InSituCorrection"
+    },
+    "comment" : {
+      "en" : "Correction done directly on devices that are already being used"
+    },
+    "id" : "16",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Device",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "en",
+        "value" : "http://dbpedia.org/ontology/MedicalDevice",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Device",
+      "en" : "Device"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#DEV001",
+      "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+      "labels" : {
+        "IRI-based" : "DEV001"
+      }
+    } ],
+    "subClasses" : [ "18", "19", "20", "21" ],
+    "comment" : {
+      "en" : "A medical device registered in the EUDAMED catalogue"
+    },
+    "id" : "6"
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Incident",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "en",
+        "value" : "http://dbpedia.org/ontology/Event",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Incident",
+      "en" : "Incident"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#INC001",
+      "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+      "labels" : {
+        "IRI-based" : "INC001"
+      }
+    } ],
+    "subClasses" : [ "1" ],
+    "comment" : {
+      "en" : "A serious incident reported for a specific medical device"
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassIII",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassIII",
+      "en" : "ClassIII"
+    },
+    "comment" : {
+      "en" : "Devices with the highest risk, like pacemakers or heart valves"
+    },
+    "id" : "12",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassI",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassI",
+      "en" : "ClassI"
+    },
+    "comment" : {
+      "en" : "Devices with low risk, like bandages or glasses"
+    },
+    "id" : "9",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Recall",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Recall",
+      "en" : "Recall"
+    },
+    "comment" : {
+      "en" : "When a manufacturer takes back devices because they have a problem"
+    },
+    "id" : "25",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassC",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassC",
+      "en" : "ClassC"
+    },
+    "comment" : {
+      "en" : "IVD devices with high risk, like glucose meters for diabetics"
+    },
+    "id" : "45",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassD",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassD",
+      "en" : "ClassD"
+    },
+    "comment" : {
+      "en" : "IVD devices with very high risk, like HIV or hepatitis tests"
+    },
+    "id" : "32",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassA",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassA",
+      "en" : "ClassA"
+    },
+    "comment" : {
+      "en" : "IVD devices with low risk, used in general lab analysis"
+    },
+    "id" : "29",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassB",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassB",
+      "en" : "ClassB"
+    },
+    "comment" : {
+      "en" : "IVD devices with moderate risk, like pregnancy tests"
+    },
+    "id" : "35",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#IVDDevice",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IVDDevice",
+      "en" : "IVDDevice"
+    },
+    "comment" : {
+      "en" : "Device used to analyze samples outside the body for diagnosis"
+    },
+    "id" : "18",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#IDVRiskClass",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IDVRiskClass",
+      "en" : "IVDRiskClass"
+    },
+    "subClasses" : [ "45", "32", "29", "35" ],
+    "comment" : {
+      "en" : "Risk category for in vitro diagnostic devices under IVDR regulation"
+    },
+    "id" : "30"
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassIIb",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassIIb",
+      "en" : "ClassIIb"
+    },
+    "comment" : {
+      "en" : "Devices with higher risk, like ventilators"
+    },
+    "id" : "10",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassIIa",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassIIa",
+      "en" : "ClassIIa"
+    },
+    "comment" : {
+      "en" : "Devices with medium risk, like contact lenses"
+    },
+    "id" : "11",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ActiveDevice",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActiveDevice",
+      "en" : "ActiveDevice"
+    },
+    "comment" : {
+      "en" : "Device that needs electricity or another energy source to work"
+    },
+    "id" : "19",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ImplantableDevice",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImplantableDevice",
+      "en" : "ImplantableDevice"
+    },
+    "comment" : {
+      "en" : "Device that is placed inside the human body"
+    },
+    "id" : "20",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Risk",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Risk",
+      "en" : "Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#RSK001",
+      "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+      "labels" : {
+        "IRI-based" : "RSK001"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A risk identified and classified according to IMDRF nomenclature"
+    },
+    "id" : "4"
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ImplantableActiveDevice",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImplantableActiveDevice",
+      "en" : "ImplantableActiveDevice"
+    },
+    "comment" : {
+      "en" : "Device that is both implanted in the body and needs energy to work"
+    },
+    "id" : "21",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "57",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#SafetyAlert",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SafetyAlert",
+      "en" : "SafetyAlert"
+    },
+    "comment" : {
+      "en" : "Alert sent to hospitals and doctors about a safety problem with a device"
+    },
+    "id" : "23",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#CorrectiveAction",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CorrectiveAction",
+      "en" : "CorrectiveAction"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#FSCA001",
+      "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+      "labels" : {
+        "IRI-based" : "FSCA001"
+      }
+    } ],
+    "subClasses" : [ "16", "25", "23" ],
+    "comment" : {
+      "en" : "A field safety corrective action taken after an incident"
+    },
+    "id" : "17"
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasRisk",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasRisk",
+      "en" : "hasRisk"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Links an incident to the risk that caused it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#isImplantable",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "isImplantable",
+      "en" : "isImplantable"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Says if the device is meant to be implanted in the body or not"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#manufacturerName",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "manufacturerName",
+      "en" : "manufacturerName"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "Name of the company that makes the device"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasManufacturer",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "hasManufacturer",
+      "en" : "hasManufacturer"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Links a device to the company that manufactured it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "range" : "17",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "17",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#status",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "status",
+      "en" : "status"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Shows if the corrective action is still open or already closed"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "26"
+  }, {
+    "range" : "30",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "range" : "30",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "range" : "17",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "range" : "30",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#actionType",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "actionType",
+      "en" : "actionType"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Type of action that was taken to fix the problem"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#reportedIn",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "reportedIn",
+      "en" : "reportedIn"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Links an incident to the device involved"
+    },
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasRiskClass",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasRiskClass",
+      "en" : "hasRiskClass"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Links a device to its risk classification"
+    },
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#udiDI",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "udiDI",
+      "en" : "udiDI"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Unique identifier code of the device, used in EUDAMED"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "40"
+  }, {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "6",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "range" : "30",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#outcome",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "outcome",
+      "en" : "outcome"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "What happened to the patient after the incident"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "46"
+  }, {
+    "range" : "6",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "48"
+  }, {
+    "range" : "8",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "range" : "6",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "range" : "6",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "range" : "8",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "range" : "8",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "range" : "8",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasIVDRiskClass",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "hasIVDRiskClass",
+      "en" : "hasIVDRiskClass"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Links an IVD device to its risk classification under IVDR regulation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasCorrectiveAction",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "hasCorrectiveAction",
+      "en" : "hasCorrectiveAction"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Links an incident to the corrective action taken"
+    },
+    "attributes" : [ "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#isActive",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "isActive",
+      "en" : "isActive"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Tells if the device needs energy to work"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#reportDate",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "reportDate",
+      "en" : "reportDate"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Date when the incident was reported to the authorities"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#deviceName",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "deviceName",
+      "en" : "The name given to the device by the manufacturer"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#country",
+    "baseIri" : "http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "country",
+      "en" : "country"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "Country where the manufacturer is based"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "64"
+  } ]
+}

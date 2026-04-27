@@ -1,0 +1,432 @@
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasCorrectiveAction
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasCorrectiveAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Incident> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#CorrectiveAction> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to the corrective action taken"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#label> "hasCorrectiveAction"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasIVDRiskClass
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasIVDRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasIVDRiskClass> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#IVDDevice> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasIVDRiskClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#IDVRiskClass> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasIVDRiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an IVD device to its risk classification under IVDR regulation"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasIVDRiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "hasIVDRiskClass"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasManufacturer
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Device> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Manufacturer> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a device to the company that manufactured it"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "hasManufacturer"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasRisk
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasRisk> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Incident> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasRisk> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Risk> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to the risk that caused it"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasRisk> <http://www.w3.org/2000/01/rdf-schema#label> "hasRisk"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasRiskClass
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Device> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#RiskClass> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a device to its risk classification"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "hasRiskClass"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#reportedIn
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#reportedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#reportedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Incident> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#reportedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Device> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#reportedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to the device involved"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#reportedIn> <http://www.w3.org/2000/01/rdf-schema#label> "reportedIn"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#actionType
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#actionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#actionType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#CorrectiveAction> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#actionType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#actionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of action that was taken to fix the problem"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#actionType> <http://www.w3.org/2000/01/rdf-schema#label> "actionType"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#country
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#country> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Manufacturer> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#country> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#country> <http://www.w3.org/2000/01/rdf-schema#comment> "Country where the manufacturer is based"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#country> <http://www.w3.org/2000/01/rdf-schema#label> "country"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#deviceName
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#deviceName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#deviceName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Device> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#deviceName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#deviceName> <http://www.w3.org/2000/01/rdf-schema#label> "The name given to the device by the manufacturer"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#deviceName> <http://www.w3.org/2000/01/rdf-schema#label> "deviceName"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#isActive
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#isActive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#isActive> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Device> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#isActive> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#isActive> <http://www.w3.org/2000/01/rdf-schema#comment> "Tells if the device needs energy to work"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#isActive> <http://www.w3.org/2000/01/rdf-schema#label> "isActive"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#isImplantable
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#isImplantable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#isImplantable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Device> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#isImplantable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#isImplantable> <http://www.w3.org/2000/01/rdf-schema#comment> "Says if the device is meant to be implanted in the body or not"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#isImplantable> <http://www.w3.org/2000/01/rdf-schema#label> "isImplantable"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#manufacturerName
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#manufacturerName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#manufacturerName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Manufacturer> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#manufacturerName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#manufacturerName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the company that makes the device"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#manufacturerName> <http://www.w3.org/2000/01/rdf-schema#label> "manufacturerName"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#outcome
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#outcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#outcome> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Incident> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#outcome> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#outcome> <http://www.w3.org/2000/01/rdf-schema#comment> "What happened to the patient after the incident"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#outcome> <http://www.w3.org/2000/01/rdf-schema#label> "outcome"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#reportDate
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#reportDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#reportDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Incident> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#reportDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#reportDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date when the incident was reported to the authorities"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#reportDate> <http://www.w3.org/2000/01/rdf-schema#label> "reportDate"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#status
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#status> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#CorrectiveAction> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#status> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#status> <http://www.w3.org/2000/01/rdf-schema#comment> "Shows if the corrective action is still open or already closed"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#status> <http://www.w3.org/2000/01/rdf-schema#label> "status"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#udiDI
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#udiDI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#udiDI> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Device> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#udiDI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#udiDI> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier code of the device, used in EUDAMED"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#udiDI> <http://www.w3.org/2000/01/rdf-schema#label> "udiDI"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ActiveDevice
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ActiveDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Device> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Device that needs electricity or another energy source to work"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#label> "ActiveDevice"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassA
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#IDVRiskClass> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassA> <http://www.w3.org/2000/01/rdf-schema#comment> "IVD devices with low risk, used in general lab analysis"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassA> <http://www.w3.org/2000/01/rdf-schema#label> "ClassA"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassB
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#IDVRiskClass> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassB> <http://www.w3.org/2000/01/rdf-schema#comment> "IVD devices with moderate risk, like pregnancy tests"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassB> <http://www.w3.org/2000/01/rdf-schema#label> "ClassB"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassC
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#IDVRiskClass> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassC> <http://www.w3.org/2000/01/rdf-schema#comment> "IVD devices with high risk, like glucose meters for diabetics"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassC> <http://www.w3.org/2000/01/rdf-schema#label> "ClassC"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassD
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#IDVRiskClass> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassD> <http://www.w3.org/2000/01/rdf-schema#comment> "IVD devices with very high risk, like HIV or hepatitis tests"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassD> <http://www.w3.org/2000/01/rdf-schema#label> "ClassD"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassI
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#RiskClass> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassI> <http://www.w3.org/2000/01/rdf-schema#comment> "Devices with low risk, like bandages or glasses"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassI> <http://www.w3.org/2000/01/rdf-schema#label> "ClassI"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassIII
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassIII> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassIII> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#RiskClass> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassIII> <http://www.w3.org/2000/01/rdf-schema#comment> "Devices with the highest risk, like pacemakers or heart valves"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassIII> <http://www.w3.org/2000/01/rdf-schema#label> "ClassIII"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassIIa
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassIIa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassIIa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#RiskClass> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassIIa> <http://www.w3.org/2000/01/rdf-schema#comment> "Devices with medium risk, like contact lenses"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassIIa> <http://www.w3.org/2000/01/rdf-schema#label> "ClassIIa"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassIIb
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassIIb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassIIb> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#RiskClass> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassIIb> <http://www.w3.org/2000/01/rdf-schema#comment> "Devices with higher risk, like ventilators"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ClassIIb> <http://www.w3.org/2000/01/rdf-schema#label> "ClassIIb"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#CorrectiveAction
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#CorrectiveAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#CorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#comment> "A field safety corrective action taken after an incident"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#CorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#label> "CorrectiveAction"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Device
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Manufacturer> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasManufacturer> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "A medical device registered in the EUDAMED catalogue"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Device> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://dbpedia.org/ontology/MedicalDevice"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#IDVRiskClass
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#IDVRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#IDVRiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk category for in vitro diagnostic devices under IVDR regulation"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#IDVRiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "IVDRiskClass"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#IVDDevice
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#IVDDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#IVDDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Device> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#IVDDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Device used to analyze samples outside the body for diagnosis"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#IVDDevice> <http://www.w3.org/2000/01/rdf-schema#label> "IVDDevice"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ImplantableActiveDevice
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ImplantableActiveDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Device> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Device that is both implanted in the body and needs energy to work"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#label> "ImplantableActiveDevice"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ImplantableDevice
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ImplantableDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Device> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Device that is placed inside the human body"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#label> "ImplantableDevice"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#InSituCorrection
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#InSituCorrection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#CorrectiveAction> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#comment> "Correction done directly on devices that are already being used"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#label> "InSituCorrection"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Incident
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Incident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Device> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#reportedIn> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Incident> <http://www.w3.org/2000/01/rdf-schema#comment> "A serious incident reported for a specific medical device"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Incident> <http://www.w3.org/2000/01/rdf-schema#label> "Incident"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Incident> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://dbpedia.org/ontology/Event"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Manufacturer
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "A company which manufactures medical devices" .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "Manufacturer"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://dbpedia.org/ontology/Company"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Recall
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Recall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Recall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#CorrectiveAction> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Recall> <http://www.w3.org/2000/01/rdf-schema#comment> "When a manufacturer takes back devices because they have a problem"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Recall> <http://www.w3.org/2000/01/rdf-schema#label> "Recall"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Risk
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Risk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Risk> <http://www.w3.org/2000/01/rdf-schema#comment> "A risk identified and classified according to IMDRF nomenclature" .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Risk> <http://www.w3.org/2000/01/rdf-schema#label> "Risk"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#RiskClass
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#RiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#RiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of risk assigned to a device following the MDR regulation rules"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#RiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "RiskClass"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#SafetyAlert
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#SafetyAlert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#CorrectiveAction> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#comment> "Alert sent to hospitals and doctors about a safety problem with a device"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#label> "SafetyAlert"@en .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#SeriousIncident
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#SeriousIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Incident> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "An incident that caused serious harm"@en .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#label> "SeriousIncident"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#DEV001
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#DEV001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#DEV001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Device> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#DEV001> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasManufacturer> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#MAN001> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#DEV001> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasRiskClass> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-9#ClassIII> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#DEV001> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#deviceName> "HeartMate" .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#DEV001> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#isActive> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#DEV001> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#isImplantable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#DEV001> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#udiDI> "(01)00380740009095" .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#FSCA001
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#FSCA001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#FSCA001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#CorrectiveAction> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#FSCA001> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#actionType> "SafetyAlert" .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#FSCA001> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#status> "Open" .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#INC001
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#INC001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#INC001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Incident> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#INC001> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasCorrectiveAction> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#FSCA001> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#INC001> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasRisk> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#RSK001> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#INC001> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#reportedIn> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#DEV001> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#INC001> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#outcome> "Serious patient injury - embolic stroke" .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#INC001> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#reportDate> "2024-01-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#MAN001
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#MAN001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#MAN001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Manufacturer> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#MAN001> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#country> "Ireland" .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#MAN001> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#manufacturerName> "Medtronic plc" .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#RSK001
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#RSK001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#RSK001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Risk> .
+# 
+# http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-9#ClassIII
+<http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-9#ClassIII> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#i> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid10 <http://www.w3.org/2003/11/swrl#body> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid12 .
+_:genid12 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#a> .
+_:genid12 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid12 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasCorrectiveAction> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid14 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Incident> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid10 <http://www.w3.org/2003/11/swrl#head> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> .
+_:genid16 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#CorrectiveAction> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid17 <http://www.w3.org/2003/11/swrl#body> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r> .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid19 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasRisk> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#d> .
+_:genid21 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid21 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#reportedIn> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid23 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Incident> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid17 <http://www.w3.org/2003/11/swrl#head> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r> .
+_:genid25 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid25 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasRisk> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid3 <http://www.w3.org/2003/11/swrl#body> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#m> .
+_:genid5 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid5 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#hasManufacturer> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid7 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Device> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid3 <http://www.w3.org/2003/11/swrl#head> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#m> .
+_:genid9 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/pcjimejos/ontologies/2026/3/untitled-ontology-11#Manufacturer> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
